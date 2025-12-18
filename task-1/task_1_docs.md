@@ -49,3 +49,5 @@ python scripts/database_setup.py
 ```
 docker run -it --rm --env-file .env -v $(pwd)/data:/data -v $(pwd)/log_files:/log_files kabiromohd/data_science:quote-delivery
 ```
+
+This will run the Quote App
