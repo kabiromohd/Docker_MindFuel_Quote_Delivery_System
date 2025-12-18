@@ -6,7 +6,12 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Get database path from environment variable
-DB_PATH = "/home/kabiromohd/Docker_MindFuel_Quote_Delivery_System/task-1/data/quote_users.db"
+DB_PATH = "/Docker_MindFuel_Quote_Delivery_System/task-1/data/quote_users.db"
+
+# Create it if it doesn't exist
+path = "/Docker_MindFuel_Quote_Delivery_System/task-1/data/"
+os.makedirs(path, exist_ok=True)
+
 # Create a connection to duckdb
 
 # Establish connection to DuckDB database
@@ -34,4 +39,5 @@ VALUES
 (3, 'Full Name 3', 'example3@yahoo.com', 'inactive', 'daily'),
 (4, 'Full Name 4', 'example4@gmail.com', 'active', 'weekly'),
 (5, 'Full Name 5', 'example5@yahoo.com', 'active', 'daily');
+
 """)
