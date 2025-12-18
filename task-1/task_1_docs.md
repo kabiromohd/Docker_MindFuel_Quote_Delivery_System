@@ -42,7 +42,7 @@ Rename the ```.env_test``` to ```.env``` and populate the relevant secrets
 Open ```scripts/database_setup.py``` and populate valid users details, names and save. Run below command to setup a duckdb database:
 
 ```
-python scripts/database_setup.py
+python ~/scripts/database_setup.py
 ```
 
 ### Run the Quote App
@@ -51,4 +51,5 @@ docker run -it --rm --env-file .env -v $(pwd)/data:/data -v $(pwd)/log_files:/lo
 ```
 
 This will run the Quote App and it mounts the secrets, database volume and log files volume at run-time
+
 
