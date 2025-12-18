@@ -41,7 +41,7 @@ DuckDB’s DB is just a single .duckdb file.
 You can move the file between machines or share it easily.
 Perfect if your project runs locally, on a laptop, or a small cloud VM.
 
-4 No Overhead in Dev/Test
+4. No Overhead in Dev/Test
 You can start coding immediately. No need for DB provisioning.
 This is nice when your main focus is automation and emailing, not DB management.
 
@@ -68,6 +68,7 @@ docker run -it --rm --env-file .env -v $(pwd)/data:/data -v $(pwd)/log_files:/lo
 ```
 
 This will run the Quote App and it mounts the secrets, database volume and log files volume at run-time
+
 
 
 
