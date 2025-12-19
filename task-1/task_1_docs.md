@@ -28,7 +28,7 @@ docker build -t quote-delivery:latest .
 
 ```
 ### Duckdb Database used for task -- the why
-1. Simplicity & Zero Setup
+1. Simplicity and Zero Setup
 DuckDB is serverless: it’s just a local file. No need to manage a running database, credentials, network, or Docker containers.
 For a small project like daily quotes, you don’t really need a full-fledged database server.
 
@@ -37,7 +37,7 @@ DuckDB shines for read-heavy, analytical workloads on local files.
 In this use case, storing maybe a few thousand quotes or emails per day, DuckDB is fast and lightweight.
 
 3. Portability
-DuckDB’s DB is just a single .duckdb file.
+DuckDB’s DB is just a single duckdb file.
 You can move the file between machines or share it easily.
 Perfect if your project runs locally, on a laptop, or a small cloud VM.
 
@@ -68,6 +68,7 @@ docker run -it --rm --env-file .env -v $(pwd)/data:/data -v $(pwd)/log_files:/lo
 ```
 
 This will run the Quote App and it mounts the secrets, database volume and log files volume at run-time
+
 
 
 
