@@ -57,11 +57,11 @@ def setup_database(conn):
             INSERT INTO users
                 (user_id, name, email, subscription_status, email_frequency)
             VALUES
-                (1, 'Kabir Mohammed', 'kabirolawalemohammed@yahoo.com', 'active', 'daily'),
-                (2, 'Abubakar Mohammed', 'skyfortcafe@gmail.com', 'active', 'weekly'),
-                (3, 'Usman Mohammed', 'skyfortcafe@yahoo.com', 'inactive', 'daily'),
-                (4, 'Al-amin Mohammed', 'skyforttravelandtoursltd@gmail.com', 'active', 'weekly'),
-                (5, 'Lawal Mohammed', 'skyfortglobalresourcesltd@yahoo.com', 'active', 'daily')
+                (1, 'Full Name 1', 'example_email_1@yahoo.com', 'active', 'daily'),
+                (2, 'Full Name 2', 'example_email_2@gmail.com', 'active', 'weekly'),
+                (3, 'Full Name 3', 'example_email_3@yahoo.com', 'inactive', 'daily'),
+                (4, 'Full Name 4', 'example_email_4@gmail.com', 'active', 'weekly'),
+                (5, 'Full Name 5', 'example_email_5@yahoo.com', 'active', 'daily')
             ON CONFLICT (user_id) DO NOTHING;
             """)
 
@@ -81,4 +81,5 @@ if conn:
     setup_database(conn)
     print("Database setup completed successfully.")
 else:
+
     print("Database setup aborted due to connection failure.")
