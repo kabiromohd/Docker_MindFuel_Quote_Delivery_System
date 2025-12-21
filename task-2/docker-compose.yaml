@@ -1,0 +1,56 @@
+services:
+  app:
+    build: .
+    container_name: ${APP_CONTAINER}
+    restart: on-failure
+    ports:
+      - "8500:8500"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    env_file:
+      - .env
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_HOST=${POSTGRES_HOST}
+      - POSTGRES_PORT=${POSTGRES_PORT}
+      - POSTGRES_CONTAINER=${POSTGRES_CONTAINER}
+    volumes:
+      - ./log_files:/log_files
+  postgres:
+    image: postgres:14
+    restart: on-failure
+    container_name: ${POSTGRES_CONTAINER}
+    env_file:
+      - .env
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_HOST=${POSTGRES_HOST}
+      - POSTGRES_PORT=${POSTGRES_PORT}
+    ports:
+      - "${HOST_PORT}:5432"
+    volumes:
+      - postgres-quote-vol:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "${POSTGRES_USER}", "-d", "${POSTGRES_DB}"]
+      interval: 5s
+      retries: 5
+      start_period: 15s
+  pgadmin:
+    image: dpage/pgadmin4
+    restart: on-failure
+    container_name: pgadmin-quote
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=${PGADMIN_EMAIL}
+      - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_PASSWORD}
+    ports:
+      - "${PGADMIN_PORT}:80"
+    volumes:
+      - pgadmin-quote:/var/lib/pgadmin
+volumes:
+  postgres-quote-vol:
+  pgadmin-quote:

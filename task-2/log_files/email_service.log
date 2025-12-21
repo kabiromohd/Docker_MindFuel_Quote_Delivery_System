@@ -1,0 +1,106 @@
+2025-11-07 12:49:21,875 - INFO - Fetching quote...
+2025-11-07 12:49:21,875 - INFO - Fetching quote from API...
+2025-12-21 10:35:16,932 - root - INFO - Fetching quote...
+2025-12-21 10:35:16,950 - root - INFO - Fetching quote from API...
+2025-12-21 10:35:16,953 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): zenquotes.io:443
+2025-12-21 10:35:18,654 - urllib3.connectionpool - DEBUG - https://zenquotes.io:443 "GET /api/today HTTP/1.1" 200 None
+2025-12-21 10:35:18,655 - root - INFO - Quote fetched successfully: “You'll get more from being a peacemaker than a warrior.” — Arnold Schwarzenegger
+2025-12-21 10:35:18,657 - root - INFO - Quote fetched: “You'll get more from being a peacemaker than a warrior.” — Arnold Schwarzenegger
+2025-12-21 10:35:18,658 - root - INFO - Preparing to send emails to users...
+2025-12-21 10:35:18,658 - root - INFO - Connecting to PostgreSQL database...
+2025-12-21 10:35:18,696 - root - INFO - PostgreSQL connection established successfully.
+2025-12-21 10:35:18,696 - root - INFO - Connected to Postgres database to fetch active users
+2025-12-21 10:35:19,196 - root - INFO - Fetched 4 active users from postgres database
+2025-12-21 10:35:19,197 - root - INFO - Database connection closed
+2025-12-21 10:35:19,197 - root - INFO - Total active users to email: 4
+2025-12-21 10:35:19,197 - root - INFO - Connecting to PostgreSQL database...
+2025-12-21 10:35:19,213 - root - INFO - PostgreSQL connection established successfully.
+2025-12-21 10:35:19,213 - root - INFO - Connected to database to update last_emailed for user_id: 1
+2025-12-21 10:35:20,137 - root - INFO - Hours since last emailed: 19.859910885277777
+2025-12-21 10:35:20,137 - root - INFO - Email to kabirolawalemohammed@yahoo.com not sent due to frequency settings.
+2025-12-21 10:35:20,275 - root - INFO - Connected to database to update last_emailed for user_id: 2
+2025-12-21 10:35:21,418 - root - INFO - Hours since last emailed: 19.860267051388888
+2025-12-21 10:35:21,419 - root - INFO - Email to skyfortcafe@gmail.com not sent due to frequency settings.
+2025-12-21 10:35:21,674 - root - INFO - Connected to database to update last_emailed for user_id: 4
+2025-12-21 10:35:22,867 - root - INFO - Hours since last emailed: 19.86066938472222
+2025-12-21 10:35:22,867 - root - INFO - Email to skyforttravelandtoursltd@gmail.com not sent due to frequency settings.
+2025-12-21 10:35:23,004 - root - INFO - Connected to database to update last_emailed for user_id: 5
+2025-12-21 10:35:23,947 - root - INFO - Hours since last emailed: 19.86096936138889
+2025-12-21 10:35:23,947 - root - INFO - Email to skyfortglobalresourcesltd@yahoo.com not sent due to frequency settings.
+2025-12-21 10:35:24,082 - root - INFO - Database connection closed.
+2025-12-21 10:35:24,083 - root - INFO - Preparing to send daily summary to admin...
+2025-12-21 10:35:26,851 - root - INFO - Email send to Admin email: kabirwale@yahoo.com
+2025-12-21 10:35:27,074 - root - INFO - Success: Email sent to kabirwale@yahoo.com
+2025-12-21 10:35:27,075 - root - INFO - last_emailed updated on databaseafter sending email.
+2025-12-21 10:35:27,076 - root - INFO - Daily summary sent to admin kabirwale@yahoo.com
+2025-12-21 10:35:27,076 - root - INFO - Email delivery process completed. Check log for details.
+2025-12-21 14:17:05,896 - root - INFO - Fetching quote...
+2025-12-21 14:17:05,933 - root - INFO - Fetching quote from API...
+2025-12-21 14:17:05,942 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): zenquotes.io:443
+2025-12-21 14:17:09,175 - urllib3.connectionpool - DEBUG - https://zenquotes.io:443 "GET /api/today HTTP/1.1" 200 None
+2025-12-21 14:17:09,176 - root - INFO - Quote fetched successfully: “You'll get more from being a peacemaker than a warrior.” — Arnold Schwarzenegger
+2025-12-21 14:17:09,179 - root - INFO - Quote fetched: “You'll get more from being a peacemaker than a warrior.” — Arnold Schwarzenegger
+2025-12-21 14:17:09,180 - root - INFO - Preparing to send emails to users...
+2025-12-21 14:17:09,180 - root - INFO - Connecting to PostgreSQL database...
+2025-12-21 14:17:09,483 - root - INFO - PostgreSQL connection established successfully.
+2025-12-21 14:17:09,483 - root - INFO - Connected to Postgres database to fetch active users
+2025-12-21 14:17:10,034 - root - INFO - Fetched 4 active users from postgres database
+2025-12-21 14:17:10,035 - root - INFO - Database connection closed
+2025-12-21 14:17:10,035 - root - INFO - Total active users to email: 4
+2025-12-21 14:17:10,035 - root - INFO - Connecting to PostgreSQL database...
+2025-12-21 14:17:10,055 - root - INFO - PostgreSQL connection established successfully.
+2025-12-21 14:17:10,055 - root - INFO - Connected to database to update last_emailed for user_id: 1
+2025-12-21 14:17:11,534 - root - INFO - Hours since last emailed: 23.557521326388887
+2025-12-21 14:17:11,534 - root - INFO - Email to kabirolawalemohammed@yahoo.com not sent due to frequency settings.
+2025-12-21 14:17:11,680 - root - INFO - Connected to database to update last_emailed for user_id: 2
+2025-12-21 14:17:12,938 - root - INFO - Hours since last emailed: 23.557911445277778
+2025-12-21 14:17:12,938 - root - INFO - Email to skyfortcafe@gmail.com not sent due to frequency settings.
+2025-12-21 14:17:13,145 - root - INFO - Connected to database to update last_emailed for user_id: 4
+2025-12-21 14:17:14,718 - root - INFO - Hours since last emailed: 23.558405826666668
+2025-12-21 14:17:14,718 - root - INFO - Email to skyforttravelandtoursltd@gmail.com not sent due to frequency settings.
+2025-12-21 14:17:15,087 - root - INFO - Connected to database to update last_emailed for user_id: 5
+2025-12-21 14:17:16,332 - root - INFO - Hours since last emailed: 23.558854098333335
+2025-12-21 14:17:16,332 - root - INFO - Email to skyfortglobalresourcesltd@yahoo.com not sent due to frequency settings.
+2025-12-21 14:17:16,523 - root - INFO - Database connection closed.
+2025-12-21 14:17:16,523 - root - INFO - Preparing to send daily summary to admin...
+2025-12-21 14:17:18,839 - root - INFO - Email send to Admin email: kabirwale@yahoo.com
+2025-12-21 14:17:18,984 - root - INFO - Success: Email sent to kabirwale@yahoo.com
+2025-12-21 14:17:18,984 - root - INFO - last_emailed updated on databaseafter sending email.
+2025-12-21 14:17:18,986 - root - INFO - Daily summary sent to admin kabirwale@yahoo.com
+2025-12-21 14:17:18,986 - root - INFO - Email delivery process completed. Check log for details.
+2025-12-21 15:05:43,822 - root - INFO - Fetching quote...
+2025-12-21 15:05:43,900 - root - INFO - Fetching quote from API...
+2025-12-21 15:05:43,907 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): zenquotes.io:443
+2025-12-21 15:05:45,937 - urllib3.connectionpool - DEBUG - https://zenquotes.io:443 "GET /api/today HTTP/1.1" 200 None
+2025-12-21 15:05:45,938 - root - INFO - Quote fetched successfully: “You'll get more from being a peacemaker than a warrior.” — Arnold Schwarzenegger
+2025-12-21 15:05:45,941 - root - INFO - Quote fetched: “You'll get more from being a peacemaker than a warrior.” — Arnold Schwarzenegger
+2025-12-21 15:05:45,941 - root - INFO - Preparing to send emails to users...
+2025-12-21 15:05:45,942 - root - INFO - Connecting to PostgreSQL database...
+2025-12-21 15:05:45,964 - root - INFO - PostgreSQL connection established successfully.
+2025-12-21 15:05:45,964 - root - INFO - Connected to Postgres database to fetch active users
+2025-12-21 15:05:46,546 - root - INFO - Fetched 4 active users from postgres database
+2025-12-21 15:05:46,547 - root - INFO - Database connection closed
+2025-12-21 15:05:46,547 - root - INFO - Total active users to email: 4
+2025-12-21 15:05:46,547 - root - INFO - Connecting to PostgreSQL database...
+2025-12-21 15:05:46,570 - root - INFO - PostgreSQL connection established successfully.
+2025-12-21 15:05:46,570 - root - INFO - Connected to Postgres database to update last_emailed for user_id: 1
+2025-12-21 15:05:48,118 - root - INFO - Hours since last emailed: 24.367683495555553
+2025-12-21 15:05:49,880 - root - INFO - Success: Email sent to kabirolawalemohammed@yahoo.com
+2025-12-21 15:05:49,880 - root - INFO - last_emailed updated on databaseafter sending email.
+2025-12-21 15:05:49,964 - root - INFO - Connected to Postgres database to update last_emailed for user_id: 2
+2025-12-21 15:05:51,334 - root - INFO - Hours since last emailed: 24.36857684222222
+2025-12-21 15:05:51,334 - root - INFO - Email to skyfortcafe@gmail.com not sent due to frequency settings.
+2025-12-21 15:05:51,476 - root - INFO - Connected to Postgres database to update last_emailed for user_id: 4
+2025-12-21 15:05:52,910 - root - INFO - Hours since last emailed: 24.36901473444444
+2025-12-21 15:05:52,910 - root - INFO - Email to skyforttravelandtoursltd@gmail.com not sent due to frequency settings.
+2025-12-21 15:05:53,052 - root - INFO - Connected to Postgres database to update last_emailed for user_id: 5
+2025-12-21 15:05:54,509 - root - INFO - Hours since last emailed: 24.369458850555553
+2025-12-21 15:05:56,418 - root - INFO - Success: Email sent to skyfortglobalresourcesltd@yahoo.com
+2025-12-21 15:05:56,419 - root - INFO - last_emailed updated on databaseafter sending email.
+2025-12-21 15:05:56,454 - root - INFO - Database connection closed.
+2025-12-21 15:05:56,455 - root - INFO - Preparing to send daily summary to admin...
+2025-12-21 15:05:59,365 - root - INFO - Email send to Admin email: kabirwale@yahoo.com
+2025-12-21 15:05:59,729 - root - INFO - Success: Email sent to kabirwale@yahoo.com
+2025-12-21 15:05:59,729 - root - INFO - last_emailed updated on databaseafter sending email.
+2025-12-21 15:05:59,729 - root - INFO - Daily summary sent to admin kabirwale@yahoo.com
+2025-12-21 15:05:59,730 - root - INFO - Email delivery process completed. Check log for details.
