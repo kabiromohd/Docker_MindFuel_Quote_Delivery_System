@@ -95,8 +95,11 @@ git clone https://github.com/kabiromohd/Docker_MindFuel_Quote_Delivery_System.gi
 
 cd Docker_MindFuel_Quote_Delivery_System/task-1
 ```
+## Environment Variables
+Rename ```.env_test``` to ```.env``` and populate the relevant secrets
 
 ## Setup the Users Postgres database (This is to be done once only)
+Locate the ```database_setup.py``` file and populate valid emails and names that will be added to the postgres database
 
 Run the following command to start the Postgres database and Pgadmin services:
 
@@ -131,6 +134,7 @@ docker-compose up --build
 ```
 
 ![scre](https://github.com/user-attachments/assets/f52003da-2cf6-4068-9a77-0d827d05d693)
+
 
 
 
