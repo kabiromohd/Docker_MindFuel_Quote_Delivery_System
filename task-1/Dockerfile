@@ -5,11 +5,12 @@ ENV PYTHONPATH=/app
 
 WORKDIR /app
 
-# Copy app files
-COPY app/. /app/
-
 COPY ./requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Copy app files
+COPY app/. /app/
+
 CMD ["python", "main.py"]
+
 
