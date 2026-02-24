@@ -6,4 +6,4 @@
 
 ## Task 2:
 - Multi-Container Setup With Docker Compose
-- [Documentation task 2](https://github.com/kabiromohd/Docker_MindFuel_Quote_Delivery_System/blob/main/task-2/task_2_docs.md)
+- [Documentation for task 2](https://github.com/kabiromohd/Docker_MindFuel_Quote_Delivery_System/blob/main/task-2/task_2_docs.md)
