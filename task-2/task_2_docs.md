@@ -47,44 +47,27 @@ As the engineer in charge, I have been given the job to containerize the applica
 
 ## Project file Structure
 
+```
 task-2
-
 ├── Dockerfile
-
 ├── app
-
 │   ├── main.py
-
 │   └── scripts
-
 │       ├── __init__.py
-
 │       ├── check_db_update.py
-
 │       ├── connect_to_db.py
-
 │       ├── database_setup.py
-
 │       ├── fetch_quote_from_api.py
-
 │       ├── fetch_users.py
-
 │       ├── logger.py
-
 │       └── send_email.py
-
 ├── docker-compose.yaml
-
 ├── log_files
-
 │   ├── cron_log.txt
-
 │   └── email_service.log
-
 ├── requirements.txt
-
 └── task_2_docs.md
-
+```
 
 ## Clone the Project:
 
@@ -134,6 +117,7 @@ docker-compose up --build
 ```
 
 ![scre](https://github.com/user-attachments/assets/f52003da-2cf6-4068-9a77-0d827d05d693)
+
 
 
 
