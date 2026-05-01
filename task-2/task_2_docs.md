@@ -76,7 +76,7 @@ Run the following commands:
 ```
 git clone https://github.com/kabiromohd/Docker_MindFuel_Quote_Delivery_System.git
 
-cd Docker_MindFuel_Quote_Delivery_System/task-1
+cd Docker_MindFuel_Quote_Delivery_System/task-2
 ```
 ## Environment Variables
 Rename ```.env_test``` to ```.env``` and populate the relevant secrets
@@ -98,7 +98,7 @@ cd app/scripts/
 python database_setup.py
 ```
 
-Verify the users have been added to the Postgres database by accessing Pgadmin via ```http://localhost:5050```
+Verify the users data have been added to the Postgres database by accessing Pgadmin via ```http://localhost:5050```
 
 ## Start the Quote Application
 Run the below docker command
